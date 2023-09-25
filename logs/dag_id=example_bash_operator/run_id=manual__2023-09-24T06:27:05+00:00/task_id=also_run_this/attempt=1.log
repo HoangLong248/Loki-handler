@@ -1,0 +1,64 @@
+[2023-09-24T06:27:09.628+0000] {param.py:354} DEBUG - Updating task params ({'example_key': 'example_value'}) with DagRun.conf ({'example_key': 'example_value'})
+[2023-09-24T06:27:09.642+0000] {taskinstance.py:1092} DEBUG - previous_execution_date was called
+[2023-09-24T06:27:09.708+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2023-09-24T06:27:09.734+0000] {param.py:354} DEBUG - Updating task params ({'example_key': 'example_value'}) with DagRun.conf ({'example_key': 'example_value'})
+[2023-09-24T06:27:09.746+0000] {taskinstance.py:1092} DEBUG - previous_execution_date was called
+[2023-09-24T06:27:09.758+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2023-09-24T06:27:09.770+0000] {taskinstance.py:842} DEBUG - Refreshing TaskInstance <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> from DB
+[2023-09-24T06:27:09.802+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2023-09-24T06:27:09.803+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2023-09-24T06:27:09.803+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Trigger Rule' PASSED: True, The task instance did not have any upstream tasks.
+[2023-09-24T06:27:09.816+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2023-09-24T06:27:09.816+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2023-09-24T06:27:09.816+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]>
+[2023-09-24T06:27:09.821+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2023-09-24T06:27:09.822+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2023-09-24T06:27:09.833+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2023-09-24T06:27:09.834+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Trigger Rule' PASSED: True, The task instance did not have any upstream tasks.
+[2023-09-24T06:27:09.834+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2023-09-24T06:27:09.834+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [queued]>
+[2023-09-24T06:27:09.834+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-09-24T06:27:09.872+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): also_run_this> on 2023-09-24 06:27:05+00:00
+[2023-09-24T06:27:09.882+0000] {standard_task_runner.py:57} INFO - Started process 95 to run task
+[2023-09-24T06:27:09.895+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'example_bash_operator', 'also_run_this', 'manual__2023-09-24T06:27:05+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/example_bashoperator.py', '--cfg-path', '/tmp/tmpr7a63y93']
+[2023-09-24T06:27:09.897+0000] {standard_task_runner.py:85} INFO - Job 49: Subtask also_run_this
+[2023-09-24T06:27:09.898+0000] {cli_action_loggers.py:67} DEBUG - Calling callbacks: [<function default_action_log at 0x7f199406d550>]
+[2023-09-24T06:27:09.984+0000] {param.py:354} DEBUG - Updating task params ({'example_key': 'example_value'}) with DagRun.conf ({'example_key': 'example_value'})
+[2023-09-24T06:27:09.995+0000] {taskinstance.py:1092} DEBUG - previous_execution_date was called
+[2023-09-24T06:27:10.005+0000] {task_command.py:415} INFO - Running <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [running]> on host 99e69330c0f0
+[2023-09-24T06:27:10.006+0000] {settings.py:353} DEBUG - Disposing DB connection pool (PID 95)
+[2023-09-24T06:27:10.006+0000] {settings.py:212} DEBUG - Setting up DB connection pool (PID 95)
+[2023-09-24T06:27:10.007+0000] {settings.py:285} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2023-09-24T06:27:10.018+0000] {taskinstance.py:842} DEBUG - Refreshing TaskInstance <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [running]> from DB
+[2023-09-24T06:27:10.083+0000] {param.py:354} DEBUG - Updating task params ({'example_key': 'example_value'}) with DagRun.conf ({'example_key': 'example_value'})
+[2023-09-24T06:27:10.101+0000] {taskinstance.py:1092} DEBUG - previous_execution_date was called
+[2023-09-24T06:27:10.115+0000] {taskinstance.py:923} DEBUG - Clearing XCom data
+[2023-09-24T06:27:10.124+0000] {retries.py:93} DEBUG - Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+[2023-09-24T06:27:10.177+0000] {retries.py:93} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2023-09-24T06:27:10.204+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_bash_operator' AIRFLOW_CTX_TASK_ID='also_run_this' AIRFLOW_CTX_EXECUTION_DATE='2023-09-24T06:27:05+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-24T06:27:05+00:00'
+[2023-09-24T06:27:10.205+0000] {__init__.py:116} DEBUG - Preparing lineage inlets and outlets
+[2023-09-24T06:27:10.205+0000] {__init__.py:157} DEBUG - inlets: [], outlets: []
+[2023-09-24T06:27:10.206+0000] {bash.py:186} DEBUG - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_bash_operator' AIRFLOW_CTX_TASK_ID='also_run_this' AIRFLOW_CTX_EXECUTION_DATE='2023-09-24T06:27:05+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-24T06:27:05+00:00'
+[2023-09-24T06:27:10.207+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-09-24T06:27:10.208+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "ti_key=example_bash_operator__also_run_this__20230924"']
+[2023-09-24T06:27:10.224+0000] {subprocess.py:86} INFO - Output:
+[2023-09-24T06:27:10.230+0000] {subprocess.py:93} INFO - ti_key=example_bash_operator__also_run_this__20230924
+[2023-09-24T06:27:10.230+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-09-24T06:27:10.252+0000] {__init__.py:74} DEBUG - Lineage called with inlets: [], outlets: []
+[2023-09-24T06:27:10.253+0000] {taskinstance.py:842} DEBUG - Refreshing TaskInstance <TaskInstance: example_bash_operator.also_run_this manual__2023-09-24T06:27:05+00:00 [running]> from DB
+[2023-09-24T06:27:10.267+0000] {taskinstance.py:1456} DEBUG - Clearing next_method and next_kwargs.
+[2023-09-24T06:27:10.268+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=example_bash_operator, task_id=also_run_this, execution_date=20230924T062705, start_date=20230924T062709, end_date=20230924T062710
+[2023-09-24T06:27:10.268+0000] {taskinstance.py:2428} DEBUG - Task Duration set to 0.450789
+[2023-09-24T06:27:10.283+0000] {cli_action_loggers.py:85} DEBUG - Calling callbacks: []
+[2023-09-24T06:27:10.318+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-24T06:27:10.345+0000] {dagrun.py:734} DEBUG - number of tis tasks for <DagRun example_bash_operator @ 2023-09-24 06:27:05+00:00: manual__2023-09-24T06:27:05+00:00, state:running, queued_at: 2023-09-24 06:27:07.631227+00:00. externally triggered: True>: 4 task(s)
+[2023-09-24T06:27:10.346+0000] {dagrun.py:755} DEBUG - number of scheduleable tasks for <DagRun example_bash_operator @ 2023-09-24 06:27:05+00:00: manual__2023-09-24T06:27:05+00:00, state:running, queued_at: 2023-09-24 06:27:07.631227+00:00. externally triggered: True>: 2 task(s)
+[2023-09-24T06:27:10.346+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.run_this_last manual__2023-09-24T06:27:05+00:00 [None]> dependency 'Trigger Rule' PASSED: False, Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 2 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=0, upstream_failed=0, removed=0, done=1, success_setup=0, skipped_setup=0), upstream_task_ids={'this_will_skip', 'run_after_loop', 'also_run_this'}
+[2023-09-24T06:27:10.347+0000] {taskinstance.py:1147} DEBUG - Dependencies not met for <TaskInstance: example_bash_operator.run_this_last manual__2023-09-24T06:27:05+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 2 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=0, upstream_failed=0, removed=0, done=1, success_setup=0, skipped_setup=0), upstream_task_ids={'this_will_skip', 'run_after_loop', 'also_run_this'}
+[2023-09-24T06:27:10.347+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.run_this_last manual__2023-09-24T06:27:05+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2023-09-24T06:27:10.347+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.run_this_last manual__2023-09-24T06:27:05+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2023-09-24T06:27:10.348+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.run_after_loop manual__2023-09-24T06:27:05+00:00 [None]> dependency 'Trigger Rule' PASSED: True, The task instance did not have any upstream tasks.
+[2023-09-24T06:27:10.348+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.run_after_loop manual__2023-09-24T06:27:05+00:00 [None]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2023-09-24T06:27:10.348+0000] {taskinstance.py:1166} DEBUG - <TaskInstance: example_bash_operator.run_after_loop manual__2023-09-24T06:27:05+00:00 [None]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2023-09-24T06:27:10.349+0000] {taskinstance.py:1157} DEBUG - Dependencies all met for dep_context=None ti=<TaskInstance: example_bash_operator.run_after_loop manual__2023-09-24T06:27:05+00:00 [None]>
+[2023-09-24T06:27:10.358+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
